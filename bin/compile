@@ -62,5 +62,5 @@ ls -lah $BUILD_DIR/vendor/chromedriver
 topic "Writing profile script"
 mkdir -p $BUILD_DIR/.profile.d
 cat <<EOF >$BUILD_DIR/.profile.d/chromedriver.sh
-export PATH="\$HOME/vendor/chromedriver:\$PATH"
+export PATH="\$BUILD_DIR/vendor/chromedriver:\$PATH"
 EOF
